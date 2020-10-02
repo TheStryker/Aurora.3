@@ -4,7 +4,7 @@
 	name_plural = "Baselines"
 	bodytype = BODYTYPE_IPC
 	age_min = 1
-	age_max = 60
+	age_max = 55
 	economic_modifier = 3
 	default_genders = list(NEUTER)
 
