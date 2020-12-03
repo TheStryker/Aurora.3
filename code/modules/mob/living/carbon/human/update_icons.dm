@@ -363,11 +363,18 @@ There are several things that need to be remembered:
 
 		// Hair.
 		if(hair_is_visible)
+			var/icon/grad_s = null
 			var/datum/sprite_accessory/hair_style = hair_styles_list[h_style]
 			if(hair_style && (species.type in hair_style.species_allowed))
 				var/icon/hair_s = new/icon("icon" = hair_style.icon, "icon_state" = hair_style.icon_state)
 				if(hair_style.do_colouration)
+					if(grad_style)
+						grad_s = new/icon("icon" = 'icons/mob/hair_gradients.dmi', "icon_state" = GLOB.hair_gradients[grad_style])
+						grad_s.Blend(hair_s, ICON_AND)
+						grad_s.Blend(rgb(r_grad, g_grad, b_grad), ICON_MULTIPLY)
 					hair_s.Blend(rgb(r_hair, g_hair, b_hair), hair_style.icon_blend_mode)
+					if(!isnull(grad_s))
+						hair_s.Blend(grad_s, ICON_OVERLAY)
 
 				face_standing.Blend(hair_s, ICON_OVERLAY)
 
