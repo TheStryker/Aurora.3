@@ -312,6 +312,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/sn_powerstation)
+"bh" = (
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 5
+	},
+/turf/unsimulated/floor,
+/area/sn_wild)
 "bi" = (
 /mob/living/simple_animal/hostile/hivebot,
 /turf/simulated/floor/exoplanet/dirt_konyang,
@@ -615,7 +621,8 @@
 	pixel_x = 20
 	},
 /obj/item/clothing/under/rank/sol/army{
-	name = "tattered sol army fatigues"
+	name = "tattered sol army fatigues";
+	desc = "A set of green military fatigues issued to the oft-forgetten soldiers of the Solarian Army, you can tell it's an army uniform because there's a faded section on the left chest pocket where a patch of the seal of the Solarian Marine Corps presumably used to be located. Various markings on the uniform indicate this uniform as belonging to the old colonial garrison of Konyang."
 	},
 /turf/simulated/floor/wood,
 /area/sn_interiors)
@@ -877,6 +884,69 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
+"dQ" = (
+/obj/structure/table/rack,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/butch,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/unbreakable,
+/obj/item/material/hatchet/machete/deluxe,
+/obj/item/material/hatchet/machete/deluxe,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/bayonet,
+/obj/item/material/knife/tacknife,
+/obj/item/material/knife/tacknife,
+/obj/item/hammer,
+/obj/item/hammer,
+/obj/item/pickaxe/hammer,
+/obj/item/melee/classic_baton,
+/obj/item/melee/classic_baton,
+/obj/item/melee/classic_baton,
+/obj/item/melee/baton,
+/obj/item/melee/baton,
+/obj/item/melee/baton,
+/obj/item/material/sword/katana/konyang,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/obj/item/device/flashlight/flare/torch,
+/obj/item/device/flashlight/flare/torch,
+/obj/item/device/flashlight/flare/torch,
+/obj/item/device/flashlight/flare/torch,
+/turf/simulated/floor/plating,
+/area/sn_warehouse)
 "dR" = (
 /obj/structure/bed/stool/chair/plastic{
 	dir = 1
@@ -1395,6 +1465,7 @@
 	dir = 8
 	},
 /obj/item/mech_component/manipulators/heavy,
+/obj/item/mech_component/control_module,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "fY" = (
@@ -1543,11 +1614,82 @@
 /turf/simulated/floor/asphalt,
 /area/sn_powerstation)
 "gA" = (
-/obj/effect/floor_decal/corner/mauve{
-	dir = 10
+/obj/structure/table/rack,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe,
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
 	},
-/turf/unsimulated/floor,
-/area/sn_wild)
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/scythe/sickle{
+	pixel_x = 5;
+	pixel_y = -5
+	},
+/obj/item/material/twohanded/pike/pitchfork,
+/obj/item/material/twohanded/pike/pitchfork,
+/obj/item/material/twohanded/pike/pitchfork,
+/obj/item/material/knife/butterfly,
+/obj/item/material/knife/butterfly,
+/obj/item/material/knife/butterfly/switchblade,
+/obj/item/material/knife/butterfly/switchblade,
+/obj/item/material/knife/tacknife,
+/obj/item/material/knife/tacknife,
+/obj/item/hammer,
+/obj/item/hammer,
+/obj/item/pickaxe/hammer,
+/obj/item/melee/classic_baton,
+/obj/item/melee/classic_baton,
+/obj/item/melee/classic_baton,
+/obj/item/device/flashlight/maglight,
+/obj/item/device/flashlight/maglight,
+/obj/item/device/flashlight/maglight,
+/obj/item/device/flashlight/maglight,
+/obj/item/device/flashlight/maglight,
+/obj/item/material/sword/katana/konyang,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/obj/item/shovel/gadpathur{
+	desc = "A standard-issue Konyang Army entrenching tool. Sharpened edges make this tool/weapon equally adept at breaking earth and collarbones."
+	},
+/turf/simulated/floor/plating,
+/area/sn_warehouse)
 "gB" = (
 /obj/effect/decal/road_marking{
 	dir = 4
@@ -2205,6 +2347,12 @@
 "jv" = (
 /obj/structure/structural_support,
 /turf/simulated/floor/sidewalk/flat,
+/area/sn_wild)
+"jw" = (
+/obj/effect/floor_decal/corner/mauve{
+	dir = 5
+	},
+/turf/unsimulated/floor,
 /area/sn_wild)
 "jy" = (
 /obj/effect/decal/road_marking/thin,
@@ -4229,6 +4377,12 @@
 	},
 /turf/simulated/floor/shuttle/dark_blue,
 /area/shuttle/scc_evac)
+"ro" = (
+/obj/structure/utility_pole/street/on{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/sidewalk/blocks,
+/area/sn_wild)
 "rp" = (
 /obj/structure/bed/stool/chair/folding{
 	dir = 4
@@ -4249,6 +4403,7 @@
 /area/sn_warehouse)
 "ru" = (
 /obj/structure/table/reinforced/wood,
+/obj/item/storage/secure/briefcase/money,
 /turf/simulated/floor/wood,
 /area/sn_interiors)
 "rx" = (
@@ -5267,6 +5422,8 @@
 /obj/item/melee/energy/sword/knife/sol,
 /obj/item/melee/energy/sword/knife/sol,
 /obj/item/melee/energy/sword/knife/sol,
+/obj/item/melee/chainsword,
+/obj/item/melee/chainsword,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "vz" = (
@@ -6287,6 +6444,18 @@
 /obj/random/dirt_75,
 /turf/simulated/floor/exoplanet/sidewalk/blocks,
 /area/sn_wild)
+"zp" = (
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/obj/item/material/knife,
+/turf/simulated/floor/plating,
+/area/sn_warehouse)
 "zq" = (
 /turf/simulated/floor/exoplanet/konyang/wilting,
 /area/sn_wild)
@@ -7108,6 +7277,14 @@
 /obj/effect/floor_decal/industrial/outline/firefighting_closet,
 /turf/simulated/floor/tiled,
 /area/sn_warehouse)
+"Ck" = (
+/obj/item/paper{
+	name = "notice for eviction";
+	info = "We are requesting you vacate the premises, your contract with the Konyang Robotics Corporation ended last week and you are NO LONGER eligible to remain in company housing. Failure to comply will be met with legal action."
+	},
+/obj/item/ducttape,
+/turf/simulated/wall,
+/area/sn_interiors)
 "Cl" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/carpet/rubber,
@@ -8231,6 +8408,7 @@
 	dir = 4;
 	must_start_working = 1
 	},
+/obj/item/storage/secure/briefcase/money,
 /turf/simulated/floor/tiled,
 /area/sn_warehouse)
 "GB" = (
@@ -8443,7 +8621,8 @@
 /area/sn_wild)
 "Hs" = (
 /obj/item/clothing/head/sol/army/service/garrison{
-	name = "tattered sol army garrison cap"
+	name = "tattered sol army garrison cap";
+	desc = "A green garrison cap issued as part of Solarian Army service uniforms, for when a peaked cap is impractical or unnecessary. All enlisted-people and NCOs should wear this. The markings on this cap indicate it as belonging to the 8th Sappers Battalion, a formation that had remained loyal to Sol in the post war period."
 	},
 /obj/item/clothing/shoes/jackboots,
 /obj/effect/ghostspawpoint{
@@ -9111,6 +9290,16 @@
 /obj/item/clothing/accessory/armband/operations,
 /obj/item/clothing/accessory/armband/operations,
 /obj/item/clothing/accessory/armband/operations,
+/obj/item/device/robotanalyzer,
+/obj/item/device/robotanalyzer,
+/obj/item/device/robotanalyzer,
+/obj/item/device/robotanalyzer,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
+/obj/item/clothing/head/welding,
 /turf/unsimulated/floor/concrete,
 /area/sn_wild)
 "JU" = (
@@ -9439,6 +9628,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/scc_evac)
+"Li" = (
+/obj/structure/utility_pole/street/on{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_wild)
 "Lj" = (
 /obj/effect/landmark/corpse/krc,
 /turf/simulated/floor/wood,
@@ -9782,34 +9977,6 @@
 /area/sn_warehouse)
 "MD" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
-/obj/item/ammo_magazine/mc9mm,
 /obj/item/stack/liquidbags/full,
 /obj/item/stack/liquidbags/full,
 /obj/item/stack/liquidbags/full,
@@ -9818,6 +9985,14 @@
 /obj/item/stack/liquidbags/full,
 /obj/item/stack/liquidbags/full,
 /obj/item/stack/liquidbags/full,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "MF" = (
@@ -9904,6 +10079,19 @@
 /obj/effect/decal/road_marking,
 /turf/simulated/floor/asphalt,
 /area/sn_wild)
+"MW" = (
+/obj/item/storage/box/syndie_kit/stimulants,
+/obj/item/storage/box/syndie_kit/stimulants,
+/obj/item/storage/box/syndie_kit/stimulants{
+	pixel_y = -6;
+	pixel_x = 7
+	},
+/obj/item/storage/box/syndie_kit/stimulants{
+	pixel_y = 10;
+	pixel_x = 7
+	},
+/turf/simulated/floor/exoplanet/lino,
+/area/sn_interiors)
 "MX" = (
 /obj/structure/window/shuttle/scc_space_ship,
 /obj/structure/grille,
@@ -11186,6 +11374,32 @@
 	},
 /turf/simulated/floor/exoplanet/water/konyang,
 /area/sn_wild)
+"RA" = (
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_x = 12
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_y = 1;
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_y = 10;
+	pixel_x = 12
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_x = 12;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_y = -6;
+	pixel_x = 4
+	},
+/turf/simulated/floor/exoplanet/lino,
+/area/sn_interiors)
 "RB" = (
 /obj/structure/closet/crate/bin/filled,
 /turf/simulated/floor/tiled,
@@ -11305,6 +11519,34 @@
 /obj/item/ammo_magazine/a357,
 /obj/item/ammo_magazine/a357,
 /obj/item/ammo_magazine/a357,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
+/obj/item/ammo_magazine/mc9mm,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "RU" = (
@@ -12401,10 +12643,9 @@
 /turf/simulated/floor/foundation,
 /area/sn_wild)
 "WN" = (
-/obj/effect/floor_decal/corner_wide/green{
-	dir = 10
-	},
-/turf/unsimulated/floor,
+/obj/random/dirt_75,
+/obj/structure/utility_pole/street/on,
+/turf/simulated/floor/exoplanet/sidewalk/blocks,
 /area/sn_wild)
 "WQ" = (
 /obj/effect/decal/road_marking{
@@ -12939,6 +13180,13 @@
 "Ze" = (
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
+"Zf" = (
+/obj/item/paper{
+	pixel_y = 15;
+	info = "Neighbor, please stop wearing your old Solarian uniform and brandishing your old knife. It's not funny, we're a new country, and if you keep doing it, I'm going to ask the cops to arrest you. Do you even have a permit for that shotgun?"
+	},
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_wild)
 "Zg" = (
 /mob/living/simple_animal/hostile/ipc_zombie,
 /turf/simulated/floor/wood,
@@ -21985,7 +22233,7 @@ Fw
 zC
 zC
 Fm
-We
+Zf
 We
 We
 Cp
@@ -22241,7 +22489,7 @@ NY
 Fw
 zC
 zC
-Za
+Ck
 We
 We
 We
@@ -25979,8 +26227,8 @@ Ub
 We
 Ub
 Ub
-ea
-eo
+PW
+bh
 eo
 eo
 eo
@@ -26246,8 +26494,8 @@ eo
 eo
 eo
 eo
-eo
-ea
+Pk
+By
 ix
 WJ
 cm
@@ -26493,8 +26741,8 @@ Ub
 We
 Ub
 Ub
-ea
-eo
+dV
+jw
 eo
 eo
 eo
@@ -26760,8 +27008,8 @@ eo
 Ha
 eo
 eo
-Pk
-By
+jD
+ow
 ea
 eS
 Sd
@@ -27017,8 +27265,8 @@ eo
 eo
 eo
 eo
-jD
-ow
+eo
+ea
 ea
 eS
 Sd
@@ -27531,8 +27779,8 @@ eo
 eo
 eo
 eo
-WN
-PW
+eo
+ea
 ea
 eS
 Sd
@@ -27788,8 +28036,8 @@ eo
 eo
 Ha
 eo
-gA
-dV
+eo
+ea
 ea
 eS
 Sd
@@ -48183,9 +48431,9 @@ YP
 om
 PR
 st
-Ze
+MW
 Ey
-Ze
+RA
 pU
 hX
 kr
@@ -50011,7 +50259,7 @@ We
 We
 We
 wa
-We
+Li
 We
 We
 lS
@@ -54871,7 +55119,7 @@ kg
 kg
 kg
 kg
-kg
+ro
 kg
 kg
 kg
@@ -55432,7 +55680,7 @@ uG
 uG
 uG
 uG
-uG
+CH
 uG
 uG
 uG
@@ -55634,7 +55882,7 @@ Za
 Za
 Za
 Za
-sf
+WN
 Lp
 wa
 Ux
@@ -57690,7 +57938,7 @@ Za
 Za
 Za
 Za
-sf
+WN
 Cn
 wa
 Ux
@@ -64763,7 +65011,7 @@ Sd
 Sd
 We
 Sd
-We
+lS
 Sd
 We
 Sd
@@ -65451,7 +65699,7 @@ nt
 nt
 nt
 mL
-Si
+sO
 tH
 nt
 El
@@ -66214,7 +66462,7 @@ xA
 xA
 xA
 Un
-Si
+sO
 Si
 xA
 nt
@@ -72090,7 +72338,7 @@ tH
 tH
 tH
 Si
-Si
+zp
 Mj
 Fv
 Si
@@ -72346,7 +72594,7 @@ Fv
 tH
 Si
 vr
-Si
+dQ
 Si
 Si
 DU
@@ -72603,7 +72851,7 @@ DU
 tH
 Si
 Fv
-Si
+gA
 tH
 tH
 tH
