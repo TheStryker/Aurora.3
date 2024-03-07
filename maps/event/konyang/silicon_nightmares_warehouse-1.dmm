@@ -133,6 +133,7 @@
 /turf/simulated/floor/tiled,
 /area/sn_interiors)
 "ax" = (
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "ay" = (
@@ -145,6 +146,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/sn_warehouse)
+"aB" = (
+/obj/item/ammo_magazine/c45/revolver,
+/turf/simulated/floor/exoplanet/lino,
+/area/sn_interiors)
 "aC" = (
 /obj/random/tech_supply{
 	pixel_x = 4;
@@ -258,6 +263,7 @@
 "aX" = (
 /obj/random/dirt_75,
 /obj/item/cell/crap,
+/obj/item/robot_parts/robot_component/diagnosis_unit,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "aZ" = (
@@ -322,6 +328,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/sn_interiors)
+"bo" = (
+/obj/effect/decal/cleanable/liquid_fuel,
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_wild)
 "br" = (
 /obj/structure/flora/rock/konyang/small,
 /obj/random/dirt_75,
@@ -612,6 +623,7 @@
 /obj/random/dirt_75,
 /obj/structure/table/glass,
 /obj/machinery/recharger,
+/obj/item/circuitboard/exosystem/weapons,
 /turf/simulated/floor/foundation,
 /area/sn_warehouse)
 "cE" = (
@@ -638,6 +650,10 @@
 	},
 /turf/simulated/floor/asphalt,
 /area/sn_wild)
+"cI" = (
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_wild)
 "cJ" = (
 /obj/item/wrench,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -646,6 +662,10 @@
 "cM" = (
 /obj/random/dirt_75,
 /obj/structure/table/rack,
+/obj/item/stack/material/steel/full,
+/obj/item/stack/material/steel/full{
+	pixel_y = 10
+	},
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "cP" = (
@@ -741,6 +761,7 @@
 "dg" = (
 /obj/structure/table/rack,
 /obj/item/pipewrench,
+/obj/item/robot_parts/robot_component/camera,
 /turf/simulated/floor/reinforced,
 /area/sn_warehouse)
 "di" = (
@@ -801,6 +822,8 @@
 /obj/structure/table/rack,
 /obj/item/pipewrench,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/effect/decal/cleanable/liquid_fuel,
+/obj/item/circuitboard/exosystem/engineering,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "dy" = (
@@ -1224,6 +1247,7 @@
 "fr" = (
 /obj/structure/table/glass,
 /obj/random/tech_supply,
+/obj/item/circuitboard/exosystem/medical,
 /turf/simulated/floor/foundation,
 /area/sn_warehouse)
 "fs" = (
@@ -1330,6 +1354,10 @@
 /obj/item/storage/backpack/holding,
 /obj/item/storage/backpack/holding,
 /obj/item/storage/backpack/holding,
+/obj/item/ammo_magazine/c762/dpra,
+/obj/item/ammo_magazine/c762/dpra,
+/obj/item/ammo_magazine/c762/dpra,
+/obj/item/ammo_magazine/c762/dpra,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "fP" = (
@@ -1366,6 +1394,7 @@
 /obj/structure/bed/stool/chair{
 	dir = 8
 	},
+/obj/item/mech_component/manipulators/heavy,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "fY" = (
@@ -1538,6 +1567,10 @@
 /obj/item/screwdriver,
 /obj/structure/girder,
 /obj/item/material/shard,
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_warehouse)
+"gF" = (
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/dirt_konyang,
 /area/sn_warehouse)
 "gH" = (
@@ -1963,6 +1996,9 @@
 "iB" = (
 /obj/structure/table/rack/retail_shelf,
 /obj/item/device/healthanalyzer,
+/obj/item/cell/hyper,
+/obj/item/cell/hyper,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/reinforced,
 /area/sn_warehouse)
 "iC" = (
@@ -2027,6 +2063,7 @@
 	dir = 1;
 	pixel_y = 26
 	},
+/obj/item/robot_parts/robot_component/radio,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "iR" = (
@@ -2377,6 +2414,10 @@
 /obj/item/stack/rods,
 /turf/simulated/floor/exoplanet/sidewalk/blocks,
 /area/sn_wild)
+"kC" = (
+/obj/structure/heavy_vehicle_frame,
+/turf/simulated/floor/sidewalk/dark,
+/area/sn_warehouse)
 "kD" = (
 /obj/structure/table/standard,
 /obj/item/material/shard,
@@ -2582,6 +2623,7 @@
 /obj/structure/bed/stool/chair/office/light{
 	dir = 8
 	},
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/foundation,
 /area/sn_warehouse)
 "lx" = (
@@ -2597,6 +2639,7 @@
 /obj/random/dirt_75,
 /obj/machinery/reagentgrinder,
 /obj/structure/table/glass,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "lz" = (
@@ -3119,6 +3162,13 @@
 	},
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
+"nF" = (
+/obj/random/dirt_75,
+/obj/item/gun/projectile/revolver/konyang/police,
+/obj/effect/landmark/corpse/konyang_cop,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/exoplanet/lino,
+/area/sn_interiors)
 "nG" = (
 /obj/item/material/shard,
 /turf/simulated/floor/foundation,
@@ -3456,6 +3506,7 @@
 /area/sn_warehouse)
 "oS" = (
 /obj/structure/closet/crate/trashcart,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "oT" = (
@@ -3697,6 +3748,7 @@
 	pixel_x = -18
 	},
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "pU" = (
@@ -4058,6 +4110,7 @@
 	dir = 4
 	},
 /obj/random/dirt_75,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "qR" = (
@@ -4191,6 +4244,7 @@
 /area/sn_wild)
 "rt" = (
 /obj/item/robot_parts/robot_component/armor,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "ru" = (
@@ -4236,6 +4290,10 @@
 /obj/item/material/shard,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
+"rH" = (
+/obj/item/circuitboard/exosystem/utility,
+/turf/simulated/floor/foundation,
+/area/sn_warehouse)
 "rI" = (
 /obj/machinery/telecomms/processor/preset_two,
 /turf/unsimulated/floor,
@@ -4246,6 +4304,7 @@
 	dir = 1;
 	pixel_y = 26
 	},
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/white,
 /area/sn_warehouse)
 "rM" = (
@@ -4264,6 +4323,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "rO" = (
@@ -4506,6 +4566,7 @@
 "sL" = (
 /obj/item/stack/material/steel/full,
 /obj/random/dirt_75,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "sN" = (
@@ -4576,6 +4637,7 @@
 /area/sn_wild)
 "tb" = (
 /obj/item/robot_parts/robot_component/camera,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "tc" = (
@@ -4791,6 +4853,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/ipc_zombie,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "tV" = (
@@ -5038,6 +5101,12 @@
 	name = "weighted shark plush";
 	desc = "A beloved jumbo sized shark that is sure to impress your friends. This one seems weighted down with something and looks like it could hurt someone."
 	},
+/obj/item/ammo_casing/peac/he,
+/obj/item/ammo_casing/peac/he,
+/obj/item/ammo_casing/peac/he,
+/obj/item/ammo_casing/peac/shrapnel,
+/obj/item/ammo_casing/peac/shrapnel,
+/obj/item/ammo_casing/peac/shrapnel,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "uX" = (
@@ -5195,6 +5264,14 @@
 /obj/item/melee/energy/sword/knife/sol,
 /obj/item/melee/energy/sword/knife/sol,
 /turf/simulated/floor/exoplanet/lino,
+/area/sn_interiors)
+"vz" = (
+/obj/structure/table/steel,
+/obj/item/reagent_containers/food/drinks/bottle/soju{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/turf/simulated/floor/tiled/white,
 /area/sn_interiors)
 "vA" = (
 /obj/effect/step_trigger/thrower{
@@ -5439,6 +5516,13 @@
 /obj/item/ammo_magazine/submachinemag,
 /turf/simulated/floor/sidewalk,
 /area/sn_wild)
+"wD" = (
+/obj/random/dirt_75,
+/obj/structure/barricade/wooden{
+	dir = 8
+	},
+/turf/simulated/floor/exoplanet/lino/diamond,
+/area/sn_interiors)
 "wF" = (
 /obj/structure/shipping_container{
 	icon_state = "blue3"
@@ -6295,6 +6379,7 @@
 /obj/effect/decal/curb/corner{
 	dir = 1
 	},
+/obj/structure/utility_pole/street/on,
 /turf/simulated/floor/concrete,
 /area/sn_wild)
 "zL" = (
@@ -6420,6 +6505,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "Aa" = (
@@ -6564,6 +6650,7 @@
 /area/sn_wild)
 "AA" = (
 /obj/machinery/optable,
+/obj/item/robot_parts/robot_component/armor/mech/combat,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "AB" = (
@@ -6648,6 +6735,24 @@
 /obj/item/storage/briefcase/aluminium,
 /obj/item/storage/briefcase/aluminium,
 /obj/item/storage/briefcase/aluminium,
+/obj/structure/closet/crate/weapon/alt{
+	name = "shotgun crate";
+	desc = "A weapons crate. This one is stamped as property of the Konyang Army."
+	},
+/obj/item/gun/launcher/rocket,
+/obj/item/gun/launcher/rocket,
+/obj/item/ammo_casing/rocket,
+/obj/item/ammo_casing/rocket,
+/obj/item/ammo_casing/rocket,
+/obj/item/ammo_casing/rocket,
+/obj/item/storage/box/landmines,
+/obj/item/storage/box/landmines,
+/obj/item/storage/box/flares,
+/obj/item/storage/box/flares,
+/obj/item/storage/box/flares,
+/obj/item/storage/box/flares,
+/obj/item/storage/box/frags,
+/obj/item/storage/box/frags,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "AU" = (
@@ -6983,6 +7088,7 @@
 /obj/item/stack/rods,
 /obj/random/dirt_75,
 /mob/living/simple_animal/hostile/ipc_zombie,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "Cg" = (
@@ -7168,6 +7274,11 @@
 /obj/random/dirt_75,
 /mob/living/simple_animal/hostile/ipc_zombie,
 /turf/simulated/floor/sidewalk/dark/grid,
+/area/sn_warehouse)
+"CO" = (
+/obj/random/dirt_75,
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "CR" = (
 /obj/structure/closet/walllocker/medical{
@@ -7387,6 +7498,7 @@
 /obj/random/dirt_75,
 /obj/structure/table/glass,
 /obj/random/tech_supply,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "DL" = (
@@ -7404,6 +7516,7 @@
 /obj/random/dirt_75,
 /obj/item/stack/rods,
 /obj/machinery/light/broken,
+/obj/item/mecha_equipment/sleeper/passenger_compartment,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "DQ" = (
@@ -7535,6 +7648,10 @@
 /obj/random/dirt_75,
 /turf/simulated/floor/tiled,
 /area/sn_warehouse)
+"Em" = (
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/concrete,
+/area/sn_wild)
 "En" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/effect/floor_decal/corner/brown{
@@ -7553,6 +7670,11 @@
 /obj/structure/flora/bush/konyang_reeds,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
+"Er" = (
+/obj/effect/landmark/scorcher,
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/dirt_konyang,
+/area/sn_wild)
 "Es" = (
 /obj/random/dirt_75,
 /obj/item/mecha_equipment/autolathe,
@@ -8835,6 +8957,7 @@
 /obj/random/dirt_75,
 /obj/structure/table/glass,
 /obj/item/material/hatchet/machete/steel,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/sidewalk/dark,
 /area/sn_warehouse)
 "Jw" = (
@@ -9196,6 +9319,7 @@
 /area/shuttle/scc_evac)
 "KP" = (
 /obj/structure/closet/crate/bin,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "KS" = (
@@ -9451,6 +9575,7 @@
 /obj/effect/decal/exterior_stairs/half/left{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "LF" = (
@@ -9562,6 +9687,7 @@
 /area/sn_warehouse)
 "Mh" = (
 /obj/structure/table/reinforced/steel,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "Mi" = (
@@ -9608,6 +9734,12 @@
 	},
 /turf/simulated/floor/asphalt,
 /area/sn_wild)
+"Ms" = (
+/obj/structure/utility_pole/street/on{
+	dir = 8
+	},
+/turf/simulated/floor/sidewalk/flat,
+/area/sn_wild)
 "Mw" = (
 /obj/machinery/papershredder{
 	pixel_x = -6
@@ -9638,6 +9770,11 @@
 /obj/random/dirt_75,
 /turf/simulated/floor/asphalt,
 /area/sn_wild)
+"MB" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/exoplanet/asphalt,
+/area/sn_warehouse)
 "MD" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/ammo_magazine/mc9mm,
@@ -9668,6 +9805,14 @@
 /obj/item/ammo_magazine/mc9mm,
 /obj/item/ammo_magazine/mc9mm,
 /obj/item/ammo_magazine/mc9mm,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
+/obj/item/stack/liquidbags/full,
 /turf/simulated/floor/exoplanet/lino,
 /area/sn_interiors)
 "MF" = (
@@ -9858,6 +10003,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/scc_evac)
+"No" = (
+/obj/random/dirt_75,
+/obj/structure/table/rack,
+/obj/item/stack/material/plasteel/full,
+/obj/item/stack/material/glass/full{
+	pixel_y = 10
+	},
+/turf/simulated/floor/sidewalk/dark,
+/area/sn_warehouse)
 "Nr" = (
 /obj/machinery/door/airlock/glass_mining{
 	dir = 4
@@ -9881,6 +10035,7 @@
 "Nz" = (
 /obj/random/junk,
 /obj/random/dirt_75,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "NA" = (
@@ -10550,6 +10705,7 @@
 "PU" = (
 /obj/item/robot_parts/robot_component/diagnosis_unit,
 /obj/random/dirt_75,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "PV" = (
@@ -10898,6 +11054,7 @@
 "Rb" = (
 /obj/structure/table/rack/retail_shelf,
 /obj/item/device/measuring_tape,
+/obj/item/mecha_equipment/crisis_drone,
 /turf/simulated/floor/reinforced,
 /area/sn_warehouse)
 "Rc" = (
@@ -11326,6 +11483,7 @@
 /area/sn_warehouse)
 "Sx" = (
 /obj/item/storage/toolbox/mechanical,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "Sy" = (
@@ -11518,6 +11676,7 @@
 	},
 /obj/structure/closet/crate/large,
 /obj/structure/fireaxecabinet/west,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "Tx" = (
@@ -12420,6 +12579,10 @@
 "Xw" = (
 /obj/structure/table/glass,
 /obj/item/mirror,
+/obj/item/paper{
+	info = "Boss, you know I'd normally never send an email like this, but Han just told me some army guys dropped off exosuit-grade weaponry in our foundry. I also saw our police security guards getting assault rifles. Do they really think all the IPCs we have stored will go rampant?";
+	name = "email to mechbay director"
+	},
 /turf/simulated/floor/foundation,
 /area/sn_warehouse)
 "Xy" = (
@@ -12950,6 +13113,7 @@
 	pixel_x = 28
 	},
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/exoplanet/asphalt,
 /area/sn_warehouse)
 "ZQ" = (
@@ -21563,7 +21727,7 @@ We
 We
 We
 Cp
-TI
+vz
 WD
 zC
 zC
@@ -50162,7 +50326,7 @@ We
 We
 We
 We
-We
+cI
 We
 We
 We
@@ -50418,9 +50582,9 @@ uG
 We
 We
 We
-We
+cI
 pJ
-We
+cI
 hu
 We
 We
@@ -50674,11 +50838,11 @@ Yx
 Yx
 We
 We
-We
+cI
 Oe
 Oe
 Oe
-Oe
+Er
 We
 Sd
 Sd
@@ -50931,10 +51095,10 @@ uG
 uG
 We
 We
-We
-Oe
-Oe
-Oe
+cI
+Er
+Er
+Er
 We
 We
 We
@@ -51189,9 +51353,9 @@ qr
 We
 hu
 We
-We
-We
-We
+bo
+cI
+cI
 We
 We
 We
@@ -51448,7 +51612,7 @@ We
 Sd
 We
 DY
-We
+cI
 We
 We
 We
@@ -53756,7 +53920,7 @@ Sh
 dw
 sL
 Nz
-xS
+CO
 PO
 UM
 rZ
@@ -54013,8 +54177,8 @@ Sh
 ZP
 Cf
 PU
-xS
-qE
+CO
+MB
 qE
 hi
 Sh
@@ -54272,7 +54436,7 @@ tU
 LE
 KP
 ax
-PO
+gF
 lr
 JO
 rB
@@ -54796,7 +54960,7 @@ uG
 EY
 EY
 EY
-EY
+Ms
 We
 We
 We
@@ -55562,8 +55726,8 @@ vB
 Sh
 kl
 vR
-lg
-lg
+Em
+Em
 lg
 vh
 vh
@@ -56349,7 +56513,7 @@ FV
 FV
 nV
 nt
-Nt
+kC
 DP
 nt
 EY
@@ -56358,7 +56522,7 @@ EY
 aI
 Sd
 Sd
-EY
+TU
 uG
 fp
 ts
@@ -57099,7 +57263,7 @@ Sd
 Xq
 We
 We
-FV
+rH
 GI
 Rm
 Ot
@@ -57113,7 +57277,7 @@ iQ
 FV
 CK
 gC
-cM
+No
 Rm
 FV
 Gm
@@ -58553,7 +58717,7 @@ Jf
 GB
 Jf
 Jf
-ZF
+wD
 Jf
 Za
 QQ
@@ -59321,7 +59485,7 @@ Rf
 MO
 Za
 YM
-Ze
+aB
 vo
 dP
 Nj
@@ -59578,7 +59742,7 @@ Hd
 Ac
 Za
 VT
-Rf
+nF
 yw
 uE
 Rf
