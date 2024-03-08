@@ -315,7 +315,7 @@
 	short_name = "infected_push"
 	desc = "The commotion of gunfire has attracted you to the area. Break those who would disrupt the signal."
 	max_count = 20
-
+	spawnpoints = list("infected_push")
 	outfit = /datum/outfit/admin/infected_push
 	assigned_role = "Konyanger Citizen"
 	special_role = "Konyanger Citizen"
@@ -346,7 +346,8 @@
 	assigned_role = "Agricultural Industrial IPC"
 	special_role = "Agricultural Industrial IPC"
 	possible_species = list(SPECIES_IPC_G2)
-	outfit = /datum/outfit/admin/infected_tank
+	outfit = /datum/outfit/admin/infected_tank/push
+	spawnpoints = list("infected_pushtank")
 
 /datum/ghostspawner/human/infected/tank/push/post_spawn(mob/user)
 	. = ..()
