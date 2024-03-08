@@ -27,18 +27,15 @@
 	uniform = /obj/item/clothing/under/rank/konyang
 	head = /obj/item/clothing/head/helmet/konyang
 	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/gun/projectile/automatic/rifle/konyang/k556
 	suit = /obj/item/clothing/suit/armor/carrier/military
 	suit_accessory = /obj/item/clothing/accessory/flagpatch/konyang
 	belt = /obj/item/storage/belt/military
 	belt_contents = list(
-		/obj/item/ammo_magazine/a556/k556 = 2,
-		/obj/item/ammo_magazine/mc9mm = 2,
 		/obj/item/material/knife/tacknife = 1
 	)
 	accessory = /obj/item/clothing/accessory/holster/hip
 	accessory_contents = list(
-		/obj/item/gun/projectile/pistol/sol = 1
+		/obj/item/gun/projectile/pistol/sol/konyang = 1
 	)
 	l_ear = /obj/item/device/flashlight/headlights
 	glasses = /obj/item/clothing/glasses/night
@@ -60,7 +57,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	belt = /obj/item/storage/belt/military
 	belt_contents = list(
-		/obj/item/ammo_magazine/c45/revolver = 4,
 		/obj/item/melee/baton/loaded = 1
 	)
 	accessory = /obj/item/clothing/accessory/holster/hip
@@ -144,20 +140,18 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/carrier/navy
 	head = /obj/item/clothing/head/helmet/konyang/navy
-	glasses = /obj/item/clothing/glasses/night
 	l_ear = /obj/item/device/radio/headset/distress
 	accessory = /obj/item/clothing/accessory/holster/hip
 	accessory_contents = list(/obj/item/gun/projectile/pistol/sol/konyang = 1)
 	back = /obj/item/storage/backpack/rucksack/navy
 	belt = /obj/item/storage/belt/military
 	belt_contents = list(
-		/obj/item/ammo_magazine/mc9mm = 3,
-		/obj/item/ammo_magazine/a556/k556 = 3
+		/obj/item/ammo_magazine/mc9mm = 1,
+		/obj/item/ammo_magazine/a556/k556 = 1
 	)
 	suit_store = /obj/item/gun/projectile/automatic/rifle/konyang/k556
 	backpack_contents = list(
 		/obj/item/handcuffs/ziptie = 2,
-		/obj/item/grenade/frag = 1,
 		/obj/item/melee/energy/sword/knife/sol = 1,
 		/obj/item/storage/firstaid/stab = 1
 	)
@@ -188,7 +182,6 @@
 	belt_contents = null
 	backpack_contents = list(
 		/obj/item/handcuffs/ziptie = 2,
-		/obj/item/grenade/frag = 1,
 		/obj/item/melee/energy/sword/knife/sol = 1,
 		/obj/item/storage/firstaid/stab = 1,
 		/obj/item/ammo_magazine/mc9mm = 3
@@ -315,3 +308,55 @@
 
 /datum/outfit/admin/konyang_merchant/get_id_access()
 	return list(ACCESS_MERCHANT)
+
+
+/datum/ghostspawner/human/infected/push
+	name = "Countryside Infected"
+	short_name = "infected_push"
+	desc = "The commotion of gunfire has attracted you to the area. Break those who would disrupt the signal."
+	max_count = 20
+
+	outfit = /datum/outfit/admin/infected_push
+	assigned_role = "Konyanger Citizen"
+	special_role = "Konyanger Citizen"
+
+/datum/outfit/admin/infected_push
+	name = "Konyanger Citizen"
+
+	uniform = list(
+		/obj/item/clothing/under/konyang,
+		/obj/item/clothing/under/konyang/blue,
+		/obj/item/clothing/under/konyang/male,
+		/obj/item/clothing/under/konyang/pink,
+		/obj/item/clothing/under/konyang/male/sleeveless,
+		/obj/item/clothing/under/konyang/male/shortsleeve
+	)
+	shoes = /obj/item/clothing/shoes/konyang
+	back = /obj/item/storage/backpack/satchel/leather
+	belt = /obj/item/material/hatchet/machete
+	l_ear = null
+	id = null
+	l_pocket = /obj/item/storage/wallet/random
+
+
+/datum/ghostspawner/human/infected/tank/push
+	short_name = "infected_pushtank"
+	name = "Infected Agricultural Industrial IPC"
+	max_count = 2
+	assigned_role = "Agricultural Industrial IPC"
+	special_role = "Agricultural Industrial IPC"
+	possible_species = list(SPECIES_IPC_G2)
+	outfit = /datum/outfit/admin/infected_tank
+
+/datum/ghostspawner/human/infected/tank/push/post_spawn(mob/user)
+	. = ..()
+	var/mob/living/carbon/human/H = user
+	if(istype(H))
+		H.mutations |= HULK
+		H.AddComponent(/datum/component/armor, list(melee = ARMOR_MELEE_VERY_HIGH, bullet = ARMOR_BALLISTIC_RIFLE, laser = ARMOR_LASER_RIFLE))
+
+/datum/outfit/admin/infected_tank/push
+	glasses = /obj/item/clothing/glasses/thermal/aviator
+	uniform = /obj/item/clothing/under/pants/jeans
+	back = /obj/item/storage/backpack/satchel/leather
+	shoes = /obj/item/clothing/shoes/workboots/dark
