@@ -512,12 +512,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/kaneyama_interiors/subterrane)
-"gp" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
 "gr" = (
 /obj/machinery/button/remote/blast_door{
 	dir = 4;
@@ -545,6 +539,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
+"gY" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/full,
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "hc" = (
 /obj/structure/lattice/catwalk/indoor/grate{
 	name = "vent grate"
@@ -1073,7 +1073,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "nL" = (
 /obj/item/crowbar,
 /turf/simulated/floor/tiled/dark/full,
@@ -1620,7 +1620,7 @@
 	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "vM" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup,
@@ -2001,7 +2001,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "AX" = (
 /obj/structure/lattice/catwalk/indoor/grate,
 /obj/structure/plasticflaps{
@@ -2094,7 +2094,7 @@
 "BU" = (
 /obj/effect/shuttle_landmark/lift/kaneyama_north_bottom,
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "Cb" = (
 /obj/machinery/light/colored/dying,
 /turf/simulated/floor/tiled/dark/full,
@@ -2148,10 +2148,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "CW" = (
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "Dc" = (
 /obj/structure/lattice/catwalk/indoor/grate,
 /obj/structure/disposalpipe/segment{
@@ -2466,7 +2466,7 @@
 	},
 /mob/living/simple_animal/hostile/ipc_zombie,
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "GV" = (
 /obj/machinery/power/apc/empty/west,
 /obj/structure/cable/green,
@@ -2956,7 +2956,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
+/area/turbolift/scc_ship/morgue_lift/kaneyama/north)
 "OC" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/stack/liquidbags/full,
@@ -3427,8 +3427,10 @@
 /area/kaneyama_interiors/subterrane)
 "Uz" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/computer/shuttle_control/lift/wall/kaneyama{
-	pixel_x = -24
+/obj/machinery/computer/shuttle_control/lift{
+	pixel_x = -3;
+	pixel_y = 23;
+	shuttle_tag = "Morgue Lift"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -31549,9 +31551,9 @@ sg
 sg
 vF
 nB
-gp
+gY
 GQ
-gp
+gY
 sP
 fm
 wS
