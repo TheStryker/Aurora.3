@@ -23,6 +23,15 @@
 	renegades.add_antagonist(user.mind, do_not_equip = TRUE) //for aooc
 	user.faction = "hivebot" //so the other zombies don't kill our zombies
 
+	var/mob/living/carbon/human/M = user
+	if(istype(M))
+		var/obj/item/organ/internal/ipc_tag/tag = M.internal_organs_by_name[BP_IPCTAG]
+		if(istype(tag))
+			tag.serial_number = uppertext(dd_limittext(md5(M.real_name), 12))
+			tag.ownership_info = IPC_OWNERSHIP_SELF
+			tag.citizenship_info = CITIZENSHIP_COALITION
+
+
 /obj/outfit/admin/infected_engi
 	name = "GON-ENE"
 	uniform = /obj/item/clothing/under/service_overalls
@@ -235,11 +244,12 @@
 	suit = /obj/item/clothing/suit/storage/vest/konyang
 
 //Konyang Navy & Army
-/datum/ghostspawner/human/konyang_navy
+/datum/ghostspawner/human/konyang_naval_infantry
 	name = "Konyang Naval Infantry"
-	short_name = "konyang_navy"
+	short_name = "konyang_naval_infantry"
 	max_count = 4
-	spawnpoints = list("konyang_navy")
+	spawnpoints = list("konyang_naval_infantry")
+	tags = list("External")
 
 	outfit = /obj/outfit/admin/konyang_navy
 	possible_species = list(SPECIES_HUMAN)
@@ -279,7 +289,7 @@
 /obj/outfit/admin/konyang_navy/get_id_access()
 	return list(ACCESS_KONYANG_POLICE, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_COALITION_NAVY)
 
-/datum/ghostspawner/human/konyang_navy/officer
+/datum/ghostspawner/human/konyang_naval_infantry/officer
 	name = "Konyang Navy Officer"
 	short_name = "konyang_navy_officer"
 	desc = "Command the Konyang Navy response team alongside corporate forces."
@@ -405,6 +415,10 @@
 	back = /obj/item/storage/backpack/satchel/leather
 	l_pocket = /obj/item/storage/wallet/sol_rich
 	id = /obj/item/card/id
+	l_ear = /obj/item/device/radio/headset
+
+/obj/outfit/admin/konyang_merchant/get_id_access()
+	return list(ACCESS_MERCHANT)
 
 //The Reporter
 /datum/ghostspawner/human/bitbyte
@@ -416,7 +430,7 @@
 	max_count = 1
 	enabled = TRUE
 
-	outfit = /datum/outfit/admin/bitbyte
+	outfit = /obj/outfit/admin/bitbyte
 	possible_species = list(SPECIES_HUMAN)
 	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 	extra_languages = list(LANGUAGE_SOL_COMMON)
