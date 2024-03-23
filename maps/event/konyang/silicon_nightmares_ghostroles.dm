@@ -23,15 +23,6 @@
 	renegades.add_antagonist(user.mind, do_not_equip = TRUE) //for aooc
 	user.faction = "hivebot" //so the other zombies don't kill our zombies
 
-	var/mob/living/carbon/human/M = user
-	if(istype(M))
-		var/obj/item/organ/internal/ipc_tag/tag = M.internal_organs_by_name[BP_IPCTAG]
-		if(istype(tag))
-			tag.serial_number = uppertext(dd_limittext(md5(M.real_name), 12))
-			tag.ownership_info = IPC_OWNERSHIP_SELF
-			tag.citizenship_info = CITIZENSHIP_COALITION
-
-
 /obj/outfit/admin/infected_engi
 	name = "GON-ENE"
 	uniform = /obj/item/clothing/under/service_overalls
@@ -100,7 +91,7 @@
 	belt = /obj/item/storage/belt/security/full
 	accessory = /obj/item/clothing/accessory/holster
 	accessory_contents = list(
-		/obj/random/civgun/konyang = 1
+		/obj/item/gun/energy/pistol = 1
 	)
 	suit_store = /obj/random/civgun/rifle/konyang
 	id = /obj/item/card/id
@@ -127,7 +118,7 @@
 	belt = /obj/item/storage/belt/security/full
 	accessory = /obj/item/clothing/accessory/holster
 	accessory_contents = list(
-		/obj/random/civgun/konyang = 1
+		/obj/item/gun/energy/pistol = 1
 	)
 
 /datum/ghostspawner/human/infected/soldier
@@ -171,8 +162,8 @@
 	id = /obj/item/card/id/kasf_corvette
 
 /obj/outfit/admin/infected_pilot
-	uniform = /obj/item/clothing/under/rank/konyang/mech_pilot
-	head = /obj/item/clothing/head/helmet/konyang/pilot
+	uniform = /obj/item/clothing/under/rank/konyang
+	head = /obj/item/clothing/head/helmet/pilot
 	shoes = /obj/item/clothing/shoes/jackboots
 	accessory = /obj/item/clothing/accessory/holster/hip
 	accessory_contents = list(
@@ -203,7 +194,7 @@
 /datum/ghostspawner/human/infected/diver_entrance
 	name = "Infected Diver - Entrance"
 	short_name = "infected_diver_entrance"
-	spawnpoints = list("infected_diver")
+	spawnpoints = list("infected_diver_entrance")
 	max_count = 1
 	possible_species = list(SPECIES_IPC_SHELL)
 	outfit = /obj/outfit/admin/infected_diver
@@ -258,9 +249,9 @@
 	special_role = "Konyang Naval Infantry"
 	respawn_flag = null
 	enabled = TRUE
-	welcome_message = "You are personnel of Konyang's Navy, deployed to locate the Hivebot master transmitter and destroy it, alongside corporate forces. Obey your commander, accomplish your objective, try not to die along the way."
+	welcome_message = "You are personnel of the Konyang Navy's veteran 2nd Naval Infantry Division, deployed to locate the Hivebot master transmitter and destroy it, alongside corporate forces. Obey your commander, accomplish your objective, try not to die along the way."
 	password = "marines"
-
+	mob_name_prefix = "SN. "
 
 /obj/outfit/admin/konyang_navy
 	name = "Konyang Naval Infantry"
@@ -275,9 +266,9 @@
 	belt = /obj/item/storage/belt/military
 	belt_contents = list(
 		/obj/item/ammo_magazine/mc9mm = 3,
-		/obj/item/ammo_magazine/a556/carbine/konyang47 = 3
+		/obj/item/ammo_magazine/a556/k556 = 4
 	)
-	suit_store = /obj/item/gun/projectile/automatic/rifle/konyang/konyang47
+	suit_store = /obj/item/gun/projectile/automatic/rifle/konyang/k556
 	backpack_contents = list(
 		/obj/item/handcuffs/ziptie = 2,
 		/obj/item/grenade/frag = 1,
@@ -290,7 +281,7 @@
 /obj/outfit/admin/konyang_navy/get_id_access()
 	return list(ACCESS_KONYANG_POLICE, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_COALITION_NAVY)
 
-/datum/ghostspawner/human/konyang_naval_infantry/officer
+/datum/ghostspawner/human/konyang_navy/officer
 	name = "Konyang Navy Officer"
 	short_name = "konyang_navy_officer"
 	desc = "Command the Konyang Navy response team alongside corporate forces."
@@ -300,8 +291,9 @@
 	possible_species = list(SPECIES_HUMAN, SPECIES_IPC)
 	assigned_role = "Konyang Navy Officer"
 	special_role = "Konyang Navy Officer"
-	welcome_message = "You are in command of the Konyang Navy personnel sent to destroy the source of the rampancy virus. Work with corporate forces in the area to eliminate the Hivebot transmission source."
+	welcome_message = "You are in command of the Konyang Navy personnel from the veteran 2nd Naval Infantry Division sent to destroy the source of the rampancy virus. Work with corporate forces in the area to eliminate the Hivebot transmission source."
 	password = "torres"
+	mob_name_prefix = "Lt. "
 
 /obj/outfit/admin/konyang_navy/officer
 	uniform = /obj/item/clothing/under/rank/konyang/navy/officer
@@ -323,7 +315,7 @@
 /datum/ghostspawner/human/konyang_army
 	short_name = "sn_konyang_army"
 	name = "Konyang Army Soldier"
-	desc = "You are a soldier of the Konyang army, deployed to assist with the Kaneyama crisis."
+	desc = "You are a soldier of the Konyang Army's elite Rapid Reaction Brigade deployed to assist with the Kaneyama crisis."
 	max_count = 8
 	tags = list("External")
 	spawnpoints = list("sn_konyang_army")
@@ -339,7 +331,7 @@
 /datum/ghostspawner/human/konyang_army/officer
 	short_name = "sn_konyang_army_officer"
 	name = "Konyang Army Officer"
-	desc = "You are an officer of the Konyang army, commanding the response to the Kaneyama crisis."
+	desc = "You are an officer of the Konyang Army from the elite Rapid Reaction Brigade, commanding the response to the Kaneyama crisis."
 	max_count = 2
 	outfit = /obj/outfit/admin/sn_konyang_army/officer
 	assigned_role = "Konyang Army Officer"
@@ -416,10 +408,6 @@
 	back = /obj/item/storage/backpack/satchel/leather
 	l_pocket = /obj/item/storage/wallet/sol_rich
 	id = /obj/item/card/id
-	l_ear = /obj/item/device/radio/headset
-
-/obj/outfit/admin/konyang_merchant/get_id_access()
-	return list(ACCESS_MERCHANT)
 
 //The Reporter
 /datum/ghostspawner/human/bitbyte
