@@ -317,7 +317,8 @@
 /area/kaneyama_interiors/subterrane)
 "ee" = (
 /obj/machinery/door/airlock{
-	name = "Washrooms"
+	name = "Washrooms";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/white,
 /area/kaneyama_interiors/subterrane)
@@ -515,9 +516,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/structure/railing/mapped{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark/full,
 /area/turbolift/kaneyama/north)
 "gr" = (
@@ -547,16 +545,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
-"gY" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/railing/mapped{
-	dir = 4
-	},
-/obj/structure/railing/mapped,
-/turf/simulated/floor/tiled/dark/full,
-/area/turbolift/kaneyama/north)
 "hc" = (
 /obj/structure/lattice/catwalk/indoor/grate{
 	name = "vent grate"
@@ -667,13 +655,11 @@
 /area/kaneyama_interiors/subterrane)
 "jr" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	dir = 4
+	dir = 4;
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
-"js" = (
-/turf/simulated/floor/plating,
-/area/kaneyama_interiors/subterrane/elevator_zone)
 "jw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
@@ -1086,12 +1072,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5
 	},
-/obj/structure/railing/mapped{
-	dir = 1
-	},
-/obj/structure/railing/mapped{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark/full,
 /area/turbolift/kaneyama/north)
 "nL" = (
@@ -1328,7 +1308,8 @@
 /area/kaneyama_interiors/subterrane)
 "qX" = (
 /obj/machinery/door/airlock/security{
-	name = "Underground Checkpoint"
+	name = "Underground Checkpoint";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -1449,7 +1430,8 @@
 /area/kaneyama_interiors/subterrane)
 "sI" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "Emergency Supplies"
+	name = "Emergency Supplies";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -1634,10 +1616,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/structure/railing/mapped{
-	dir = 8
-	},
-/obj/structure/railing/mapped,
 /obj/machinery/computer/shuttle_control/lift/kaneyama_north{
 	pixel_y = 6
 	},
@@ -1854,7 +1832,8 @@
 "yq" = (
 /obj/machinery/door/airlock/medical{
 	name = "Infirmary";
-	dir = 4
+	dir = 4;
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -2021,9 +2000,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/railing/mapped{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/dark/full,
 /area/turbolift/kaneyama/north)
 "AX" = (
@@ -2169,9 +2145,6 @@
 /area/kaneyama_interiors/subterrane)
 "CR" = (
 /obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/structure/railing/mapped{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/full,
@@ -2460,7 +2433,7 @@
 "Gj" = (
 /obj/effect/shuttle_landmark/lift/kaneyama_bottom,
 /turf/simulated/floor/plating,
-/area/kaneyama_interiors/subterrane/elevator_zone)
+/area/kaneyama_interiors/subterrane)
 "Gm" = (
 /obj/machinery/status_display{
 	pixel_y = 32
@@ -2470,7 +2443,8 @@
 "Gp" = (
 /obj/machinery/door/airlock{
 	dir = 4;
-	name = "Washrooms"
+	name = "Washrooms";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/white,
 /area/kaneyama_interiors/subterrane)
@@ -2488,9 +2462,6 @@
 /area/kaneyama_interiors)
 "GQ" = (
 /obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/railing/mapped{
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/ipc_zombie,
@@ -2975,19 +2946,14 @@
 "Op" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	dir = 4;
-	name = "Coolant Pumping"
+	name = "Coolant Pumping";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
 "Oz" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
-	},
-/obj/structure/railing/mapped{
-	dir = 1
-	},
-/obj/structure/railing/mapped{
-	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/full,
 /area/turbolift/kaneyama/north)
@@ -3430,7 +3396,8 @@
 "TV" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Emergency Power";
-	dir = 4
+	dir = 4;
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -3538,7 +3505,9 @@
 /turf/simulated/wall/r_wall,
 /area/kaneyama_interiors)
 "VB" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	insecure = 0
+	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
 "VE" = (
@@ -3689,7 +3658,8 @@
 "Yb" = (
 /obj/machinery/door/airlock/multi_tile{
 	dir = 1;
-	name = "Pumping & Coolant Control Room"
+	name = "Pumping & Coolant Control Room";
+	insecure = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
@@ -30896,10 +30866,10 @@ wS
 wS
 eo
 Uz
-js
-js
-js
-js
+AA
+AA
+AA
+AA
 vF
 sg
 sg
@@ -31153,10 +31123,10 @@ YO
 YO
 YO
 QL
-js
+AA
 Gj
-js
-js
+AA
+AA
 vF
 sg
 sg
@@ -31410,10 +31380,10 @@ YO
 YO
 YO
 QL
-js
-js
-js
-js
+AA
+AA
+AA
+AA
 vF
 sg
 sg
@@ -31581,7 +31551,7 @@ vF
 nB
 gp
 GQ
-gY
+gp
 sP
 fm
 wS
@@ -31667,10 +31637,10 @@ wS
 wS
 IE
 QL
-js
-js
-js
-js
+AA
+AA
+AA
+AA
 vF
 sg
 sg

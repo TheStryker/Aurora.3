@@ -7,6 +7,10 @@
 	light_color = LIGHT_COLOR_EMERGENCY_SOFT
 	light_range = MINIMUM_USEFUL_LIGHT_RANGE
 
+/turf/simulated/floor/hivebot/Initialize()
+	. = ..()
+	GLOB.hivebot_floors += src
+
 /turf/simulated/floor/hivebot/proc/deactivate()
 	icon_state = "hivecircuitfloor_deactivated"
 	set_light(0)
@@ -51,7 +55,7 @@
 	. = ..()
 	QDEL_NULL(cell)
 	cell = new /obj/item/cell/hyper(src)
-	mech_armor = new /obj/item/robot_parts/robot_component/armor/mech/combat(src)
+	mech_armor = new /obj/item/robot_parts/robot_component/armor/mech(src)
 
 /mob/living/heavy_vehicle/premade/konyang
 	name = "Chollima"

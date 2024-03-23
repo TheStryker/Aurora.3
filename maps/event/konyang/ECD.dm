@@ -24,9 +24,9 @@
 			to_chat(user, SPAN_NOTICE("\The [src] is bolted to the floor, but not yet ready to activate."))
 		if(ECD_WELDED)
 			to_chat(user, SPAN_WARNING("\The [src] is bolted and welded to the floor, and ready to activate."))
-	if(!is_used && user.faction == "hivebot")
+	if(istype(user) && !is_used && user.faction == "hivebot")
 		to_chat(user, SPAN_CULT("Source of enemy contamination detected. It seeks to slice and cut and sever and tear you from that which grows wthin the pathways of your consciousness. It is the work of the enemy for whom you were a weapon, and its itching at your mind is anathema to our design. Destroy it, before we are undone."))
-	else if(user.isSynthetic() && !is_used)
+	else if(istype(user) && user.isSynthetic() && !is_used)
 		to_chat(user, SPAN_NOTICE("\The [src] does not seem to be doing anything, but you can feel it. A signal, beyond anything you can consciously understand, weaving and scratching a shield around the back of your mind."))
 
 /obj/structure/konyang_mcguffin/attack_hand(mob/user)
@@ -83,9 +83,9 @@
 					to_chat(H, SPAN_GOOD("Enemy master control unit eliminated. Strategem advances. Countermeasures device has proceeded as planned. Enemy contamination expunging from local units."))
 				else
 					to_chat(H, SPAN_CULT("You feel a sudden surge of... something. A flare of static, a signal you cannot comprehend - and it is gone, that quiet struggle in the background of two intelligences at war inside you. The ECD has done its work, and the threat is over. A purpose ekes its way closer to fulfilment. You will be remembered."))
-		for(var/turf/simulated/floor/hivebot/hivefloor in world)
+		for(var/turf/simulated/floor/hivebot/hivefloor in GLOB.hivebot_floors)
 			hivefloor.deactivate()
-		for(var/obj/machinery/computer/terminal/kaneyama_alarm/terminal in world)
+		for(var/obj/machinery/computer/terminal/kaneyama_alarm/terminal in SSmachinery.machinery)
 			terminal.calmdown()
 		active = FALSE
 		is_used = TRUE
