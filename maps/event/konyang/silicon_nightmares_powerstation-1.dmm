@@ -1071,6 +1071,11 @@
 /obj/effect/landmark/corpse/ipc_zombie,
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
+"ns" = (
+/obj/effect/decal/cleanable/floor_damage/random_broken,
+/mob/living/simple_animal/hostile/ipc_zombie,
+/turf/simulated/floor/tiled/dark,
+/area/kaneyama_interiors/subterrane)
 "nx" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	name = "Large Water Vent"
@@ -1203,6 +1208,14 @@
 	pixel_x = 15
 	},
 /obj/structure/lattice/catwalk/indoor/grate,
+/turf/simulated/floor/plating,
+/area/kaneyama_interiors/subterrane)
+"oY" = (
+/obj/structure/lattice/catwalk/indoor/grate,
+/obj/machinery/light/small/emergency{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/ipc_zombie,
 /turf/simulated/floor/plating,
 /area/kaneyama_interiors/subterrane)
 "pq" = (
@@ -1683,6 +1696,13 @@
 	info = "WORK TICKET: We're detecting breaches due to seismic activity in the service tunnel. Get down there and install some reinforcing, we absolutely CANNOT afford a breach since the Army is saying we might have to shut off the above-ground cable."
 	},
 /turf/simulated/floor/plating,
+/area/kaneyama_interiors/subterrane)
+"wO" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/ipc_zombie,
+/turf/simulated/floor/tiled/dark/full,
 /area/kaneyama_interiors/subterrane)
 "wP" = (
 /obj/item/gun/energy/pistol,
@@ -2300,6 +2320,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
+/area/kaneyama_interiors/subterrane)
+"Fw" = (
+/obj/random/dirt_75,
+/mob/living/simple_animal/hostile/ipc_zombie,
+/turf/simulated/floor/tiled/dark/full,
 /area/kaneyama_interiors/subterrane)
 "FE" = (
 /obj/structure/railing/mapped{
@@ -3386,6 +3411,11 @@
 /obj/effect/floor_decal/corner_wide/paleblue{
 	dir = 9
 	},
+/turf/simulated/floor/tiled/dark,
+/area/kaneyama_interiors/subterrane)
+"TR" = (
+/obj/random/dirt_75,
+/mob/living/simple_animal/hostile/ipc_zombie,
 /turf/simulated/floor/tiled/dark,
 /area/kaneyama_interiors/subterrane)
 "TT" = (
@@ -28263,7 +28293,7 @@ YO
 MZ
 YO
 pN
-YO
+Qp
 YO
 vF
 et
@@ -28757,7 +28787,7 @@ aZ
 YO
 Ej
 Zc
-Wc
+Fw
 lY
 YO
 Eb
@@ -28783,7 +28813,7 @@ iJ
 AA
 rw
 et
-RV
+ns
 qi
 HX
 nN
@@ -29032,7 +29062,7 @@ sg
 vF
 fk
 YO
-MZ
+TR
 RV
 YO
 sB
@@ -30071,7 +30101,7 @@ XX
 XX
 XX
 XX
-XX
+wO
 Zc
 Zc
 Wc
@@ -33612,7 +33642,7 @@ Hw
 YO
 YO
 rh
-YO
+Qp
 YO
 YO
 Rl
@@ -34929,7 +34959,7 @@ sg
 sg
 sg
 vF
-tO
+oY
 Sw
 Sw
 uW
