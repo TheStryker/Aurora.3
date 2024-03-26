@@ -17,7 +17,7 @@
 
 /obj/machinery/power/portgen/Initialize()
 	. = ..()
-	soundloop = new(src, active)
+	soundloop = new(list(src), active)
 
 /obj/machinery/power/portgen/Destroy()
 	QDEL_NULL(soundloop)
@@ -291,7 +291,7 @@
 
 		else if(attacking_item.isscrewdriver())
 			open = !open
-			attacking_item.play_tool_sound(get_turf(src), 50)
+			playsound(loc, attacking_item.usesound, 50, 1)
 			if(open)
 				to_chat(user, SPAN_NOTICE("You open the access panel."))
 			else

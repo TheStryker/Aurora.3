@@ -33,7 +33,7 @@
 	},
 /area/exoplanet/adhomai)
 "M" = (
-/obj/vehicle/animal/climber,
+/obj/vehicle/bike/climber,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 268.15
 	},

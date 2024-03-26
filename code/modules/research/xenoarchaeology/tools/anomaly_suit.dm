@@ -8,7 +8,6 @@
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("skr", "taj", "una")
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 100)
-	anomaly_protection = 0.6
 
 /obj/item/clothing/head/hazmat/anomaly
 	name = "anomaly hood"
@@ -18,7 +17,6 @@
 	icon_auto_adapt = TRUE
 	icon_supported_species_tags = list("skr", "taj", "una")
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 100)
-	anomaly_protection = 0.3
 
 /obj/item/clothing/suit/space/anomaly
 	name = "excavation suit"
@@ -29,7 +27,6 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit)
 	contained_sprite = FALSE
 	icon = 'icons/obj/clothing/suits.dmi'
-	anomaly_protection = 0.5
 
 /obj/item/clothing/head/helmet/space/anomaly
 	name = "excavation hood"
@@ -39,4 +36,3 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 100)
 	icon = 'icons/obj/clothing/hats.dmi'
 	contained_sprite = FALSE
-	anomaly_protection = 0.2

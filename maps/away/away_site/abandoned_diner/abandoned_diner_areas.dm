@@ -29,19 +29,19 @@
 /area/abandoned_diner/restroom
 	name = "Restrooms"
 	icon_state = "restrooms"
-	sound_environment = SOUND_ENVIRONMENT_BATHROOM
+	sound_env = BATHROOM
 	area_blurb = "Once clean and well-maintained, these restrooms have fallen into a horrific state of disrepair and stench."
 
 /area/abandoned_diner/crew_quarters
 	name = "Crew Quarters"
 	icon_state = "crew_quarters"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_env = SMALL_SOFTFLOOR
 
 /area/abandoned_diner/maintenance
 	name = "Station Maintenance"
 	icon_state = "engineering"
 	ambience = AMBIENCE_ENGINEERING
-	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
+	sound_env = TUNNEL_ENCLOSED
 	area_blurb = "The machinery in this room chugs away, evidently creaky and in desperate need of maintenance and lubrication. Somehow, though, they're still functional."
 
 /area/abandoned_diner/storage

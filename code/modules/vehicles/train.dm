@@ -104,7 +104,7 @@
 
 /obj/vehicle/train/attackby(obj/item/attacking_item, mob/user)
 	if(attacking_item.iswrench())
-		attacking_item.play_tool_sound(get_turf(src), 70)
+		playsound(loc, attacking_item.usesound, 70, FALSE)
 		unattach(user)
 		return
 	return ..()

@@ -224,7 +224,6 @@ BLIND     // can't see anything
 	toggleable = 1
 	unacidable = 1
 	item_flags = ITEM_FLAG_AIRTIGHT
-	anomaly_protection = 0.1
 
 /obj/item/clothing/glasses/science/Initialize()
 	. = ..()

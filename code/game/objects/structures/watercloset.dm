@@ -147,7 +147,7 @@
 /obj/machinery/shower/Initialize()
 	. = ..()
 	create_reagents(2)
-	soundloop = new(src, FALSE)
+	soundloop = new(list(src), FALSE)
 
 /obj/machinery/shower/Destroy()
 	QDEL_NULL(soundloop)
