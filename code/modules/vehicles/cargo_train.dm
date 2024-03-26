@@ -195,7 +195,7 @@
 		..()
 		to_chat(user, SPAN_NOTICE("You turn on \the [src]\s ignition."))
 		playsound(src, 'sound/machines/vehicles/button.ogg', 50, FALSE)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, 'sound/machines/vehicles/start.ogg', 50, FALSE), 1 SECONDS)
+		playsound_in(src, 'sound/machines/vehicles/start.ogg', 50, FALSE, time = 1 SECOND)
 	else
 		turn_off(user)
 	update_stats()

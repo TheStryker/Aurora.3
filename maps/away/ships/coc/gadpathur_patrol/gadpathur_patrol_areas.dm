@@ -12,7 +12,7 @@
 	requires_power = FALSE
 	area_flags = null
 	ambience = AMBIENCE_SPACE
-	sound_environment = SOUND_AREA_SPACE
+	sound_env = SPACE
 	has_gravity = FALSE
 
 /area/ship/gadpathur_patrol/cic
@@ -45,11 +45,11 @@
 /area/ship/gadpathur_patrol/officer
 	name = "Gadpathurian Corvette - Officer's Quarters"
 	icon_state = "head_quarters"
-	sound_environment =  SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_env =  MEDIUM_SOFTFLOOR
 
 /area/ship/gadpathur_patrol/officer_bath
 	name = "Gadpathurian Corvette - Officer's Restroom"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_env = SMALL_ENCLOSED
 
 /area/ship/gadpathur_patrol/quarters
 	name = "Gadpathurian Corvette - General Quarters"
@@ -61,21 +61,21 @@
 
 /area/ship/gadpathur_patrol/armanent/francisca
 	name = "Gadpathurian Corvette - Light Armanent"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_env = SMALL_SOFTFLOOR
 
 /area/ship/gadpathur_patrol/armanent/longbow
 	name = "Gadpathurian Corvette - Main Armanent"
-	sound_environment =  SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_env =  MEDIUM_SOFTFLOOR
 
 /area/ship/gadpathur_patrol/ammo
 	name = "Gadpathurian Corvette - Ammo Stowage"
 	ambience = AMBIENCE_SUBSTATION
-	sound_environment =  SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_env =  MEDIUM_SOFTFLOOR
 	icon_state = "auxstorage"
 
 /area/ship/gadpathur_patrol/telecomms
 	name = "Gadpathurian Corvette - Telecommunications Closet"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_env = SMALL_ENCLOSED
 	ambience = AMBIENCE_AI
 	icon_state = "server"
 

@@ -1,6 +1,4 @@
 /datum/antagonist/proc/equip(var/mob/living/carbon/human/player)
-	SHOULD_NOT_SLEEP(TRUE)
-
 	if(!istype(player))
 		return FALSE
 

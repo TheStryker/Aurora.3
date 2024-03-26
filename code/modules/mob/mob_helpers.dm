@@ -1314,7 +1314,3 @@ var/list/intents = list(I_HELP,I_DISARM,I_GRAB,I_HURT)
 
 /mob/get_client()
 	return client
-
-///Can the mob hear
-/mob/proc/can_hear()
-	return !isdeaf(src)

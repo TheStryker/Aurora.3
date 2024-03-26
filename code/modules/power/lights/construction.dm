@@ -129,7 +129,7 @@
 			user.visible_message(SPAN_NOTICE("\The [user] closes \the [src]'s casing."),
 									SPAN_NOTICE("You close \the [src]'s casing."),
 									SPAN_WARNING("You hear something being screwed in."))
-			attacking_item.play_tool_sound(get_turf(src), 75)
+			playsound(get_turf(src), attacking_item.usesound, 75, TRUE)
 
 			switch(fixture_type)
 				if("tube")
@@ -181,7 +181,7 @@
 			to_chat(user, SPAN_WARNING("\The [src] does not have a power cell installed."))
 			return
 
-		attacking_item.play_tool_sound(get_turf(src), 50)
+		playsound(get_turf(src), attacking_item.usesound, 50, TRUE)
 		visible_message(SPAN_NOTICE("\The [user] removes \the [cell] from the [src]."),
 						SPAN_NOTICE("You remove \the [cell] from \the [src]."))
 		cell.forceMove(get_turf(src))

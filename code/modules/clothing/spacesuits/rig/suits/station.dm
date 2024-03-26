@@ -288,7 +288,6 @@
 	req_one_access = list()
 
 	allowed_module_types = MODULE_GENERAL | MODULE_UTILITY
-	anomaly_protection = TRUE
 
 /obj/item/rig/hazmat/equipped
 

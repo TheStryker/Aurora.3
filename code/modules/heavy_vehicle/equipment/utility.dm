@@ -681,7 +681,7 @@
 			to_chat(user, SPAN_WARNING("\The [src] doesn't have an anomaly core installed!"))
 			return TRUE
 		to_chat(user, SPAN_NOTICE("You remove \the [AC] from \the [src]."))
-		attacking_item.play_tool_sound(get_turf(src), 50)
+		playsound(loc, attacking_item.usesound, 50, TRUE)
 		user.put_in_hands(AC)
 		cut_overlay(anomaly_overlay)
 		qdel(anomaly_overlay)

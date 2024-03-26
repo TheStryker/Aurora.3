@@ -282,12 +282,7 @@
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/adhomai
 	meat_amount = 4
 	faction = "Adhomai"
-	vehicle_version = /obj/vehicle/animal/climber
-	natural_armor = list(
-		melee = ARMOR_MELEE_MEDIUM,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		bomb = ARMOR_BOMB_MINOR
-	)
+	vehicle_version = /obj/vehicle/bike/climber
 
 /mob/living/simple_animal/climber/saddle
 	desc = "A rideable beast of burden, large enough for one adult rider only but perfectly adapted for the rough terrain on Adhomai. This one has a saddle mounted on it"

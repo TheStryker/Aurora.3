@@ -42,7 +42,7 @@
 			toggle_active(FALSE)
 		else
 			connect_to_network()
-		attacking_item.play_tool_sound(get_turf(src), 75)
+		playsound(get_turf(src), attacking_item.usesound, 75, TRUE)
 		return
 	return ..()
 

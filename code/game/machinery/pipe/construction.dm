@@ -1506,7 +1506,7 @@
 			P.atmos_init()
 			P.build_network()
 
-	attacking_item.play_tool_sound(get_turf(src), 50)
+	playsound(src.loc, attacking_item.usesound, 50, 1)
 	user.visible_message( \
 		"[user] fastens the [src].", \
 		"<span class='notice'>You have fastened the [src].</span>", \
@@ -1534,7 +1534,7 @@
 			to_chat(user, "<span class='warning'>You need to fasten it to a pipe</span>")
 			return 1
 		new/obj/machinery/meter( src.loc )
-		attacking_item.play_tool_sound(get_turf(src), 50)
+		playsound(src.loc, attacking_item.usesound, 50, 1)
 		to_chat(user, "<span class='notice'>You have fastened the meter to the pipe</span>")
 		qdel(src)
 		return TRUE
