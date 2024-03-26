@@ -124,7 +124,7 @@
 	gear_tweaks += new /datum/gear_tweak/path(idris)
 
 /datum/gear/uniform/goldendeep
-	display_name = "golden deep outfit selection"
+	display_name = "golden deep formal outfit selection"
 	description = "A selection of formal outfits worn by members of the Golden Deep."
 	path = /obj/item/clothing/under/goldendeep
 	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
@@ -185,3 +185,104 @@
 	sort_category = "Xenowear - IPC"
 	cost = 1
 	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+
+/datum/gear/suit/goldendeep
+	display_name = "eccentric coat"
+	description = "A colorable coat worn by members of Golden Deep who feel particularly like a boss fight."
+	path = /obj/item/clothing/storage/goldendeep
+	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+	sort_category = "Xenowear - IPC"
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/accessory/goldendeep
+	display_name = "golden deep shirt selection"
+	description = "A selection of shirts and other tops worn by members of the Golden Deep."
+	path = /obj/item/clothing/accessory/goldendeep
+	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+	sort_category = "Xenowear - IPC"
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/accessory/goldendeep/New()
+	..()
+	var/list/goldendeepshirt = list()
+	goldendeepshirt["golden deep fine shirt"] = /obj/item/clothing/accessory/goldendeep
+	goldendeepshirt["golden deep pompous shirt"] = /obj/item/clothing/accessory/goldendeep/pompous
+	goldendeepshirt["golden deep cloth wrapped uniform"] = /obj/item/clothing/accessory/goldendeep/clothwrappeduniform
+	gear_tweaks += new /datum/gear_tweak/path(goldendeepshirt)
+
+/datum/gear/accessory/goldendeep/outer
+	display_name = "golden deep outer layer selection"
+	description = "A selection of tops suited for use as outer layers worn by members of the Golden Deep."
+	path = /obj/item/clothing/accessory/goldendeep/gambeson
+
+/datum/gear/accessory/goldendeep/outer/New()
+	..()
+	var/list/goldendeepouter = list()
+	goldendeepouter["golden deep quilted gambeson"] = /obj/item/clothing/accessory/goldendeep/gambeson
+	goldendeepouter["golden deep tabbard"] = /obj/item/clothing/accessory/goldendeep/tabbard
+	goldendeepouter["golden deep pullover"] = /obj/item/clothing/accessory/goldendeep/pullover
+	goldendeepouter["golden deep rain garb"] = /obj/item/clothing/accessory/goldendeep/raingarb
+	gear_tweaks += new /datum/gear_tweak/path(goldendeepouter)
+
+/datum/gear/accessory/goldendeep/cloak
+	display_name = "golden deep cloak selection"
+	description = "A selection of cloaks and capes worn by members of the Golden Deep."
+	path = /obj/item/clothing/accessory/poncho/goldendeep
+
+/datum/gear/accessory/goldendeep/cloak/New()
+	..()
+	var/list/goldendeepcloak = list()
+	goldendeepcloak["golden deep cape"] = /obj/item/clothing/accessory/poncho/goldendeep
+	goldendeepcloak["golden deep flowing cloak"] = /obj/item/clothing/accessory/poncho/goldendeep/flowingcloak
+	goldendeepcloak["golden deep elegant cloak"] = /obj/item/clothing/accessory/poncho/goldendeep/elegantcloak
+	goldendeepcloak["golden deep fur wrap"] = /obj/item/clothing/accessory/poncho/goldendeep/furwrap
+	goldendeepcloak["golden deep desert adornment"] = /obj/item/clothing/accessory/poncho/goldendeep/desertadornment
+	gear_tweaks += new /datum/gear_tweak/path(goldendeepcloak)
+
+/datum/gear/head/goldendeep
+	display_name = "golden deep headgear selection"
+	description = "A selection of hats and other headgear worn by members of the Golden Deep."
+	path = /obj/item/clothing/head/goldendeep
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
+	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+	sort_category = "Xenowear - IPC"
+
+/datum/gear/head/goldendeep/New()
+	..()
+	var/list/goldendeephat = list()
+	goldendeephat["golden deep furred crown"] = /obj/item/clothing/head/goldendeep
+	goldendeephat["golden deep cowl"] = /obj/item/clothing/head/goldendeep/cowl
+	goldendeephat["golden deep cube hood"] = /obj/item/clothing/head/goldendeep/cubehood
+	gear_tweaks += new /datum/gear_tweak/path(goldendeephat)
+
+/datum/gear/head/goldendeep/chainjewelry
+	display_name = "golden deep chain jewelry"
+	path = /obj/item/clothing/head/goldendeep/chainjewelry
+
+/datum/gear/head/goldendeep/chainjewelry/New()
+	..()
+	var/list/chainjewelry = list()
+	chainjewelry["golden deep chain jewelry"] = /obj/item/clothing/head/goldendeep/chainjewelry
+	chainjewelry["golden deep chain jewelry (baseline)"] = /obj/item/clothing/head/goldendeep/chainjewelry/baseline
+	gear_tweaks += new /datum/gear_tweak/path(chainjewelry)
+
+/datum/gear/accessory/webbing/goldendeep
+	display_name = "golden deep thesian webbing"
+	path = /obj/item/clothing/accessory/storage/goldendeep
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
+	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+	sort_category = "Xenowear - IPC"
+
+/datum/gear/back/goldendeep
+	display_name = "golden deep sacred icon"
+	path = /obj/item/storage/backpack/goldendeep
+	flags = GEAR_HAS_NAME_SELECTION | GEAR_HAS_DESC_SELECTION | GEAR_HAS_COLOR_SELECTION
+	whitelisted = list(SPECIES_IPC, SPECIES_IPC_G1, SPECIES_IPC_G2, SPECIES_IPC_XION, SPECIES_IPC_ZENGHU, SPECIES_IPC_BISHOP, SPECIES_IPC_SHELL)
+	sort_category = "Xenowear - IPC"
+
+/datum/gear/back/goldendeep/New()
+	..()
+	var/list/sacredicon = list()
+	sacredicon["golden deep sacred icon"] = /obj/item/storage/backpack/goldendeep
+	sacredicon["golden deep sacred icon (baseline)"] = /obj/item/storage/backpack/goldendeep/baseline
+	gear_tweaks += new /datum/gear_tweak/path(sacredicon)
